@@ -4,22 +4,22 @@
 
 ```
 # Dienst startet nicht / nach Ausführen von systemctl restart wird Fehlermeldung ausgegeben
-systemctl restart mariadb.service 
+systemctl restart httpd
 
 # Schritt 1 : status -> was sagen die logs (letzte 10 Zeilen) 
-systemctl status mariadb.service 
+systemctl status httpd
 
 # Nicht fündig-> Schritt 2:
 jourrnalctl -xe
 
 # Nicht fündig -> Schritt 3:
-journalctl -u mariadb.service 
+journalctl -u httpd.service 
 
 # Nicht fündig -> Schritt 4:
 # Spezifisches Log von Dienst suchen 
 # und evtl. LogLevel von Dienst hochsetzen
 # z.B. bei mariadb (durch Internetrecherche herausfinden) 
-less /var/log/mysql/error.log 
+less /var/log/httpd/error_log 
 
 # Nicht fündig -> Schritt 5
 # Allgemeines Log
@@ -29,17 +29,11 @@ less /var/log/mysql/error.log
 /var/log/messages 
 ```
 
-## Wie verfahren bei SystemV 
-
-```
-Wie bei walkthrough aber ab Schritt 4
-```
-
 ## Find error in logs quickly
 
 ```
-cd /var/log/mysql 
+cd /var/log/httpd 
 # -i = case insensitive // egal ob gross- oder kleingeschrieben
-cat error.log | grep -i error
+cat error_log | grep -i error
 ```
 
