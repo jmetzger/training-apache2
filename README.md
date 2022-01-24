@@ -7,6 +7,7 @@
   1. Installation 
      * [Installation unter RHEL/RockyLinux](install-rhel.md)
      * [Starten/Stoppen/Aktivieren und weitere hilfreiche systemctl - Befehle](systemctl-service.md)
+     * [Lauscht mein Server nach draussen](lsof.md) 
 
   1. Tipps & Tricks 
      * [In den Root-Benutzer wechseln](sudo.md)  
@@ -33,7 +34,6 @@
      * [firewalld](firewalld.md)
      * [Scannen und Überprüfen mit telnet/nmap](nmap-telnet.md) 
   1. Netzwerk/Dienste 
-     * [Auf welchen Ports lauscht mein Server](lsof.md) 
      * [Hostname setzen](hostnamectl.md)
   1. Dokumentation
 
