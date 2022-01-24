@@ -9,6 +9,9 @@
      * [Starten/Stoppen/Aktivieren und weitere hilfreiche systemctl - Befehle](systemctl-service.md)
      * [Lauscht mein Server nach draussen](lsof.md) 
      * [Die Firewall zähmen/freischalten](firewall-cmd.md)
+  1. Administration 
+     * [Konfigurationsdatei mit httpd -t prüfen](httpd-t.md)
+
   1. Logs 
      * [Journal persistent setzen](journal-auto.md)
 
