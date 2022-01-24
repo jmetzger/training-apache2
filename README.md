@@ -8,6 +8,7 @@
      * [Installation unter RHEL/RockyLinux](install-rhel.md)
      * [Starten/Stoppen/Aktivieren und weitere hilfreiche systemctl - Befehle](systemctl-service.md)
      * [Lauscht mein Server nach draussen](lsof.md) 
+     * [Die Firewall zähmen/freischalten](firewall-cmd.md)
 
   1. Tipps & Tricks 
      * [In den Root-Benutzer wechseln](sudo.md)  
