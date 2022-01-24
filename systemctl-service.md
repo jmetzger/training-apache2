@@ -1,35 +1,35 @@
 # Systemctl / Service 
 
+## Apache starten / stoppen / aktivieren 
+
+```
+# Apache wird nach der Installation nicht standardmäßig gestartet in Centos/RHEL 
+systemctl status httpd
+systemctl start httpd
+systemctl status httpd
+systemctl is-enabled httpd
+# Rückgabewert des letzten Befehls 
+# Wenn nicht aktiviert kommt eine 1 raus 
+echo $?
+
+systemctl enable httpd
+systemctl is-enabled httpd
+# Jetzt kommt eine 0 raus 
+echo $?
+```
+
 ## systemctl Beispiele 
 ```
-# Status eines Dienstes überprüfen 
-service sshd status 
-systemctl status sshd 
 
 # Wie heisst der Dienst / welche Dienste gibt es ? (nur wenn der service aktiviert ist). 
 systemctl list-units -t service 
 # für apache
-systemctl list-units -t service | grep ^apache
+systemctl list-units -t service | grep ^httpd
 # die Abkürzung 
-systemctl -t service | grep ^apache
+systemctl -t service | grep ^httpd
 
 # Wie finde ich einen service, der noch nicht aktiviert ist ? 
-systemctl list-unit-files -t service | grep ssh
-
-# Dienst aktivieren
-systemctl enable apache2 
-# Ist Dienst aktiviert 
-systemctl is-enabled apache2
-enabled
-echo $?
-0 # Wenn der Dienst aktiviert ist 
-
-# Dienst deaktivieren (nach Booten nicht starten)
-systemctl disable apache2
-systemctl is-enabled 
-disabled
-echo $?
-1 # 1 wenn nicht aktiviert
+systemctl list-unit-files -t service | grep httpd
 
 # Rebooten des Servers
 # verweist auf systemctl 
