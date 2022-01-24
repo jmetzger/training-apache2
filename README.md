@@ -4,14 +4,13 @@
 
   1. Einführung 
      * [Apache http-requests](apache-http-request.md) 
+  1. Installation 
+     * [Installation unter RHEL/RockyLinux](install-rhel.md)
 
   1. Tipps & Tricks 
      * [In den Root-Benutzer wechseln](sudo.md)  
      * [Wo bin ich ?](pwd.md)
      * [Praktische Ausgabe von langen Seiten - less](less.md) 
-     * [Datei anlegen - touch](touch.md)
-     * [Autovervollständen * und tab](autocomplete.md) 
-     * [Welches Programm wird verwendet](which.md
   1. Prozesse 
      * [Prozesse anzeigen - ps/pstree -p](prozesse.md)
      * [Prioritäten und NiceNess](nice-pr.md)
