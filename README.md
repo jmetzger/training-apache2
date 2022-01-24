@@ -11,11 +11,9 @@
      * [Die Firewall zähmen/freischalten](firewall-cmd.md)
   1. Administration 
      * [Konfigurationsdatei mit httpd -t prüfen](httpd-t.md)
-
+     * [Alle geladenen Module finden](script-modules.md)
   1. Logs 
      * [Journal persistent setzen](journal-auto.md)
-
-
   1. Tipps & Tricks 
      * [In den Root-Benutzer wechseln](sudo.md)  
      * [Wo bin ich ?](pwd.md)
