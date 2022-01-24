@@ -6,7 +6,7 @@
      * [Apache http-requests](apache-http-request.md) 
   1. Installation 
      * [Installation unter RHEL/RockyLinux](install-rhel.md)
-     * [Starten/Stoppen/Aktivieren und weitere hilfreiche systemctl - Befehle](systemctl-commands.md)
+     * [Starten/Stoppen/Aktivieren und weitere hilfreiche systemctl - Befehle](systemctl-service.md)
 
   1. Tipps & Tricks 
      * [In den Root-Benutzer wechseln](sudo.md)  
