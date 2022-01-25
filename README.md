@@ -22,6 +22,7 @@
      * [Standard-Fehlerseiten konfigurieren](default-errordocument.md)
      * [Verzeichnislisting-autoindex deaktivieren/härten](disable-autoindex.md)
      * [Keine Apache Version kommunizieren](apache-servertokens.md)
+     * [Rechte härten](rechte-haerten.md)
 
   1. Logs 
      * [Journal persistent setzen](journal-auto.md)
