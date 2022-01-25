@@ -21,6 +21,7 @@
      * [Standard-Apache-Seite deaktivieren (RHEL/Rocky)](disable-default-page-rhel.md)
      * [Standard-Fehlerseiten konfigurieren](default-errordocument.md)
      * [Verzeichnislisting-autoindex deaktivieren/härten](disable-autoindex.md)
+     * [Keine Apache Version kommunizieren](apache-servertokens.md)
 
   1. Logs 
      * [Journal persistent setzen](journal-auto.md)
@@ -32,12 +33,6 @@
   1. Prozesse 
      * [Prozesse anzeigen - ps/pstree -p](prozesse.md)
      * [Prioritäten und NiceNess](nice-pr.md)
-  1. Benutzer, Gruppen und Rechte 
-     * [Rechte](rechte.md) 
-     * [Dateien für Benutzer und Gruppen](files-users-groups.md) 
-     * [Benutzer anlegen](create-users.md) 
-     * [Benutzer löschen (debian)](deluser.md)
-     * [sudo Benutzer erstellen](mod-user-sudo.md) 
   1. Logs/Loganalyse
      * [Logfile beobachten](tailf.md)
      * [Dienste debuggen](debug-service.md)
