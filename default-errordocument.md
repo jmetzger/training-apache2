@@ -5,6 +5,14 @@
   * Dem Angreifer so wenig wie möglich Informationen geben. 
   * Prinzip: Datensparsamkeit 
 
+## Achtung 
+
+```
+# ohne Leerzeichen in den Hochkommas funktioniert nicht
+# Apache wirft einen Fehler 
+ErrorDocument 404 "" 
+```
+
 ## Wie ? 
 
 ```
