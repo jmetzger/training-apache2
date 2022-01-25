@@ -42,3 +42,11 @@ semanage port -l | grep 80
 
 
 ```
+
+## In welchem Kontext läuft der Apache-Server 
+
+```
+ps auxZ | grep httpd 
+..... :httpd_t:s0 
+
+```
