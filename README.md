@@ -15,6 +15,7 @@
   1. Absichern/Sicherheit 
      * [Standard-Apache-Seite deaktivieren (RHEL/Rocky)](disable-default-page-rhel.md)
      * [Standard-Fehlerseiten konfigurieren](default-errordocument.md)
+     * [Verzeihnislisting-autoindex deaktivieren/härten](disable-autoindex.md)
 
   1. Logs 
      * [Journal persistent setzen](journal-auto.md)
