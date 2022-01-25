@@ -29,3 +29,42 @@ mv index.html index.html.noshow
 curl -I http://192.168.56.102/ 
 
 ```
+
+## Variante 2: Ich schalte autoindex, aber will es evtl an anderer Stelle verwenden
+
+```
+# z_ deshalb, weil sie als letztes geladen werden 
+# /etc/httpd/conf.d/z_security.conf 
+
+#### Schritt 1 
+
+# Security Measure 2
+# Geht nicht, weil durch <Directory - Eintrag
+# in /etc/httpd/conf/httpd.conf ueberschreiben
+
+# Options -Indexes
+# /var/www/html - spezifischer als
+# /var/www/
+
+# Ueberschreiben der Default-Seite
+<Directory "/var/www/html">
+    Options -Indexes
+</Directory>
+
+# Setzen fuer neue VirtualHost - Projekte
+# z.B. /var/www/meine-domain.de
+<Directory "/var/www">
+    Options -Indexes
+</Directory>
+
+#### Schritt 2
+
+systemctl restart httpd 
+
+# evtl testen 
+cd /var/www/html
+mv index.html index.html.notused 
+curl -I http://192.168.56.102  
+
+
+```
