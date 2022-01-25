@@ -12,6 +12,9 @@
   1. Administration 
      * [Konfigurationsdatei mit httpd -t prüfen](httpd-t.md)
      * [Alle geladenen Module finden](script-modules.md)
+  1. Absichern/Sicherheit 
+     * [Standard-Apache-Seite deaktivieren (RHEL/Rocky)](disable-default-page-rhel.md)
+
   1. Logs 
      * [Journal persistent setzen](journal-auto.md)
   1. Tipps & Tricks 
