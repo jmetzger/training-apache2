@@ -15,6 +15,7 @@
      * [Mehrere Instanzen mit systemd starten](systemd-instances.md)
   1. SELinux 
      * [Neuen unbekannten Port freischalten, z.B. 86](selinux-port.md)
+     * [Neues DocumentRoot verwenden](selinux-new-documentroot.md)
   
   1. Absichern
      * [Standard-Apache-Seite deaktivieren (RHEL/Rocky)](disable-default-page-rhel.md)
