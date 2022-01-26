@@ -11,6 +11,11 @@
    CustomLog ${APACHE_LOG_DIR}/jobs.bw.de-access.log combined
    ErrorDocument 404 /fehler
    Alias /fehler /var/www/html/404.html
+   # oder direkte weiterleitung auf fehlerseite 
+   # wird ein browser zurückgegeben und browser macht redirect
+   # server muss domain nicht auflösen können, erst der browser 
+   ErrorDocument 404 http://www.casino2.bw.de/404.html
+
 
 </VirtualHost>
 
