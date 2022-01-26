@@ -14,7 +14,7 @@
      * [Alle geladenen Module finden](script-modules.md)
      * [Mehrere Instanzen mit systemd starten](systemd-instances.md)
      * [Rechte debuggen mit der Bash für apache](rechte-debuggen-apache-user.md)
-     * [Default-VirtualHost richtig konfigurieren - Achtung !](default-virtual-host-errors.md)
+     * [Default-VirtualHost richtig konfigurieren - Achtung !](default-vhost-first.md)
   1. SELinux 
      * [Neuen unbekannten Port freischalten, z.B. 86](selinux-port.md)
      * [Neues DocumentRoot verwenden](selinux-new-documentroot.md)
