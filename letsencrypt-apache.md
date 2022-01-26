@@ -42,8 +42,7 @@ echo "ich bin ap1 von jochen" > index.html
 ## Install certbot (Centos 8) 
 
 ```
-dnf install -y epel-release 
-dnf install -y certbot python3-certbot-apache mod_ssl
+dnf install -y epel-release && dnf install -y certbot python3-certbot-apache mod_ssl
 ```
 
 ## Variant 1: Attention: virtual host - domain must be different than hostname 
