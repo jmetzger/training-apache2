@@ -13,6 +13,7 @@
      * [Konfigurationsdatei mit httpd -t prüfen](httpd-t.md)
      * [Alle geladenen Module finden](script-modules.md)
      * [Mehrere Instanzen mit systemd starten](systemd-instances.md)
+     * [Rechte debuggen mit der Bash für apache](rechte-debuggen-apache-user.md)
   1. SELinux 
      * [Neuen unbekannten Port freischalten, z.B. 86](selinux-port.md)
      * [Neues DocumentRoot verwenden](selinux-new-documentroot.md)
