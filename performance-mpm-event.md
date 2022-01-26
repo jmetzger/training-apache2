@@ -12,6 +12,13 @@ StartServers
 # Hard limit für Thread pro Kind-Prozess 
 ThreadLimits 
 
+# Wieviel Threads per Child (max. ThreadLimits) 
+ThreadsPerChild 
+
+# Maximale Zahl an Kind-Prozessen 
+ServerLimit 
+
+
 ```
  
 
