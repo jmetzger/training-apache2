@@ -14,6 +14,7 @@ Permissions-Policy
 
 ```
 # /etc/httpd/conf.d/z_security.conf 
+Header set Strict-Transport-Security "max-age=31536000"
 Header always set Content-Security-Policy "default-src 'self'; font-src *;img-src * data:; script-src *; style-src *;"
 Header set X-XSS-Protection "1; mode=block"
 Header always set X-Frame-Options "SAMEORIGIN"
