@@ -18,6 +18,8 @@
      * [Alias für Fehlerseite in VirtualHost](virtualhost-error-with-alias.md)
   1. Rewriting / Resetting 
      * [Rewrite Header on if](if-headers.md)
+  1. Authentication 
+     * [Simple Textbased Authentication](auth-text.md) 
 
 
   1. SSL 
