@@ -55,14 +55,34 @@ RewriteRule ^$ /folder/ [R=301,L]
 
 ```
 
-## Beispiel 3: Bestimmte Dateien nicht erlauben
+## Beispiel 3: Unterseite erzwingen
+
+```
+RewriteEngine On
+RewriteRule ^$ /unterseite.html [R=301,L]
+```
+
+## Beispiel 4: Bestimmte Dateien nicht erlauben
 
 ```
 #Do not allow these file types to be called
 RewriteEngine on
 RewriteRule .*\.(jpg|jpeg|gif|png|bmp|exe|swf)$ - [F,NC]
+
+
 ```
 
+## Beispiel 5: Rewrite only, if it does not exist 
+
+```
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule .* index.php [L]
+```
 
 
 ## Ref: 
