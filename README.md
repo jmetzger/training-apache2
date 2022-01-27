@@ -19,8 +19,8 @@
   1. Rewriting / Resetting 
      * [Rewrite Header on if](if-headers.md)
   1. Authentication 
-     * [Simple Textbased Authentication](auth-text.md) 
-
+     * [Simple Textbased Authentication](auth-text.md)
+     * [Authentication with MySQL/MariadDB](auth-mysql.md) 
 
   1. SSL 
      * [SSL mit letsencrypt](letsencrypt-apache.md)
