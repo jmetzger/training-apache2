@@ -47,7 +47,13 @@ RewriteCond %{HTTP_HOST} ^olddomain.com$
 RewriteRule ^(.*)$ http://www.newdomain.com/$1 [R=301,L]
 
 ```
+## Beispiel 2: Unterordner erzwingen 
 
+```
+RewriteEngine On
+RewriteRule ^$ /folder/ [R=301,L]
+
+```
 ## Ref: 
 
   * https://httpd.apache.org/docs/trunk/rewrite/intro.html
