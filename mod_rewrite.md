@@ -34,6 +34,19 @@ Im Script kann man leichter debuggen.
 RewriteLog "/var/www/mod_rewrite.log"
 RewriteLogLevel 2
 ```
+## Beispiel 1: alte Domain auf Neue Domain umleiten
+
+```
+# Redirect all pages from olddomain.com
+# to newdomain.com
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.olddomain.com$ [OR]
+RewriteCond %{HTTP_HOST} ^olddomain.com$
+# $1 bezieht sich auf die 1. Klammer
+RewriteRule ^(.*)$ http://www.newdomain.com/$1 [R=301,L]
+
+```
 
 ## Ref: 
 
