@@ -22,6 +22,10 @@ Header always set Referrer-Policy "strict-origin"
 Header always set Permissions-Policy "geolocation=(),midi=(),sync-xhr=(),microphone=(),camera=(),magnetometer=(),gyroscope=(),fullscreen=(self),payment=()"
 ```
 
+## Testen der Header 
+
+  * https://securityheaders.com/?q=jochen.t3isp.de&followRedirects=on
+
 ## Reference 
 
   * https://webdock.io/en/docs/how-guides/security-guides/how-to-configure-security-headers-in-nginx-and-apache
