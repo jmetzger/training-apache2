@@ -54,6 +54,17 @@ RewriteEngine On
 RewriteRule ^$ /folder/ [R=301,L]
 
 ```
+
+## Beispiel 3: Bestimmte Dateien nicht erlauben
+
+```
+#Do not allow these file types to be called
+RewriteEngine on
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp|exe|swf)$ - [F,NC]
+```
+
+
+
 ## Ref: 
 
   * https://httpd.apache.org/docs/trunk/rewrite/intro.html
