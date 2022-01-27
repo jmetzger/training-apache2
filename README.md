@@ -16,6 +16,9 @@
      * [Rechte debuggen mit der Bash für apache](rechte-debuggen-apache-user.md)
      * [Default-VirtualHost richtig konfigurieren - Achtung !](default-vhost-first.md)
      * [Alias für Fehlerseite in VirtualHost](virtualhost-error-with-alias.md)
+
+  1. Monitoring 
+     * [Status aktivieren](mod_status.md) 
   1. Rewriting / Resetting 
      * [Rewrite Header on if](if-headers.md)
   1. Authentication 
