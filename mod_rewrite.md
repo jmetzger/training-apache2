@@ -28,23 +28,24 @@ Im Script kann man leichter debuggen.
 
 ```
 
-## Logging einschalten / abschalten 
+## Logging einschalten 
 
 ```
-RewriteLog "/var/www/mod_rewrite.log"
-RewriteLogLevel 2
+# highest loglevel -
+LogLevel rewrite:trace8
 ```
 ## Beispiel 1: alte Domain auf Neue Domain umleiten
 
 ```
 # Redirect all pages from olddomain.com
 # to newdomain.com
-Options +FollowSymLinks
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www.olddomain.com$ [OR]
-RewriteCond %{HTTP_HOST} ^olddomain.com$
+RewriteCond %{HTTP_HOST} ^jobs.jochen.t3isp.de$ [OR]
+RewriteCond %{HTTP_HOST} ^www.jobs.jochen.t3isp.de$
 # $1 bezieht sich auf die 1. Klammer
-RewriteRule ^(.*)$ http://www.newdomain.com/$1 [R=301,L]
+# http://www.jobs.jochen.t3isp.de/test.html 
+# ^(.*)$ = /test.html
+RewriteRule ^(.*)$ http://casino.jobs.jochen.de/$1 [R=301,L]
 
 ```
 ## Beispiel 2: Unterordner erzwingen 
