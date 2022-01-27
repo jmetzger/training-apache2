@@ -18,6 +18,14 @@ ThreadsPerChild
 # Maximale Zahl an Kind-Prozessen 
 ServerLimit 
 
+# Maximale Anzahl aller Threads  
+MaxRequestWorkers = 40 # vorher MaxClient vor 2.3 aktuell geht noch beides 
+
+# 
+
+
+
+
 
 ```
  
