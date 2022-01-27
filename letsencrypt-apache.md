@@ -85,6 +85,16 @@ https://ap1.t3isp.de
 
 ```
 
+## Harden configuration using HSTS 
+
+```
+# https://de.wikipedia.org/wiki/HTTP_Strict_Transport_Security
+# /etc/httpd/conf.d/z_security.conf 
+Header set Strict-Transport-Security "max-age=31536000"
+
+systemctl restart httpd 
+```
+
 ## Test Certificate with ssl labs 
 
   * https://ssllabs.com
