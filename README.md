@@ -17,7 +17,7 @@
      * [Default-VirtualHost richtig konfigurieren - Achtung !](default-vhost-first.md)
      * [Alias für Fehlerseite in VirtualHost](virtualhost-error-with-alias.md)
   1. Rewriting / Resetting 
-     * [Rewrite Header on if](headers-if.md)
+     * [Rewrite Header on if](if-headers.md)
 
 
   1. SSL 
