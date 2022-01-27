@@ -16,6 +16,10 @@
      * [Rechte debuggen mit der Bash für apache](rechte-debuggen-apache-user.md)
      * [Default-VirtualHost richtig konfigurieren - Achtung !](default-vhost-first.md)
      * [Alias für Fehlerseite in VirtualHost](virtualhost-error-with-alias.md)
+  1. Rewriting / Resetting 
+     * [Rewrite Header on if](headers-if.md)
+
+
   1. SSL 
      * [SSL mit letsencrypt](letsencrypt-apache.md)
      
