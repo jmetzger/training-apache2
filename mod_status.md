@@ -11,6 +11,19 @@
 
 systemctl restart httpd 
 ```
+## Extended Status
+
+```
+# Enabled by default in RHEL/Rocky 
+# Refer to mod_status 
+ExtendedStatus - "On" to track extended status information, "Off" to disable
+
+# For Performance reasons disable it if not needed
+# on possible in ServerConfiguration 
+ExtendedStatus off 
+
+```
+
 
 ## Ref:
 
