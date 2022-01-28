@@ -3,6 +3,7 @@
 ## Example config 
 
 ```
+## Schritt 1: Passwort - Datei erstellen 
 # Ubuntu / Debian 
 
 htpasswd -c /etc/apache2/.htpasswd kurs 
@@ -12,6 +13,7 @@ htpasswd /etc/apache2/.htpasswd another_user
 htpasswd -c /etc/httpd/.htpasswd kurs 
 htpasswd /etc/httpd/.htpasswd another_user
 
+## Schritt 2:Virtual Host - Konfiguration 
 <VirtualHost *:80>
     ServerAdmin webmaster@localhost
     DocumentRoot /var/www/html
@@ -26,6 +28,13 @@ htpasswd /etc/httpd/.htpasswd another_user
         Require valid-user
     </Directory>
 </VirtualHost>
+
+## Schritt 3:
+systemctl restart http
+
+## Schritt 4: Testen - Ein Login-Prompt muss kommen 
+Browser: https://jochen.t3isp.de/private/
+
 ```
 
 
