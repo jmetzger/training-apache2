@@ -15,6 +15,11 @@ openssl req -x509 -new -nodes -key ssl.netways.de_rootca.key -sha256 -days 3650 
 # Schritt 3: Key für Client erstellen 
 openssl genrsa -out ssl.netways.de_client1.key 4096
 
+# Schritt 4: CSR (Certificate Signing Request erstellen) 
+openssl req -new -key ssl.netways.de_client1.key -out ssl.netways.de_client1.csr
+
+# Schritt 5: Struktur für OpenSSL anlegen (default Verzeichnise, einkompiliert in openssl
+
 
 ```
 
