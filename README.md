@@ -46,6 +46,8 @@
 
   1. Logs 
      * [Journal persistent setzen](journal-auto.md)
+     * [Piped Logging](piped-logs.md)
+
   1. Tipps & Tricks 
      * [In den Root-Benutzer wechseln](sudo.md)  
      * [Wo bin ich ?](pwd.md)
