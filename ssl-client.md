@@ -105,7 +105,25 @@ update-ca-trust force-enable
 cd /etc/pki/ca-trust/extracted/pem 
 cat tls-ca-bundle.pem | grep ca.t3isp.de 
 
+# Schritt 11 - vhost konfigurieren
+# Überprüft Client Zertifikat aktivieren 
+# RHEL / Rocky 
+SSLCACertificateFile "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem"
+SSLVerifyClient require
+SSLVerifyDepth 5
 
+# Schrit 12 - Server neu starten 
+systemctl restart httpd 
+
+# Schritt 13: 
+# NETWAYS_Client_gmimietz.p12 - file auf Windows Rechner kopieren
+# z.B. base64 NETWAYS_Client_gmimietz.p12  > client.txt
+# cmd.exe
+# certutils -decode client.txt client.p12
+# Doppelt anklicken und importieren
+
+# Browser öffnen und Seite öffnen, jetzt man angemeldet.
+# Wenn Zertifikat, FEHLERMELDUNG 
 
 ```
 
