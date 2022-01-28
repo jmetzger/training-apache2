@@ -47,6 +47,9 @@
   1. Logs 
      * [Journal persistent setzen](journal-auto.md)
      * [Piped Logging](piped-logs.md)
+     
+  1. Proxy 
+     * [Reverse Proxy](reverse-proxy.md)
 
   1. Tipps & Tricks 
      * [In den Root-Benutzer wechseln](sudo.md)  
