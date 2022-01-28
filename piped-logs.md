@@ -3,10 +3,28 @@
 ## Example 
 
 ```
-CustomLog "|/bin/grep -v '^200' | cat >> /var/log/apache2/pi-mirror.com/access.log" combined
+<VirtualHost *:80>
+   ServerName casino.jochen.t3isp.de 
+   ServerAlias www.casino.jochen.t3isp.de
 
-# Not sure, if this works too: 
-CustomLog "|/bin/grep -v '^200' >> /var/log/apache2/pi-mirror.com/access.log" remove
+   DocumentRoot /var/www/casino.bw.de/html
+   ErrorLog /var/log/httpd/casino.bw.de-error.log
+   CustomLog "|$/usr/local/bin/logme.sh" combined
+</VirtualHost>
+
+#/usr/local/bin/logme.sh 
+#!/bin/bash
+
+while read line
+do
+  echo "$line" >> /var/log/httpd/somenew.log
+done < "${1:-/dev/stdin}"
+
+##### Step 3: set permissions 
+chmod a+x /usr/local/bin/logme.sh 
+
+##### Step 4: Restart 
+systemctl restart httpd
 
 ```
 
