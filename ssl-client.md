@@ -4,7 +4,7 @@
 
 ```
 mkdir -p /usr/local/src/SSL
-
+cd /usr/local/src/SSL
 
 ```
 
