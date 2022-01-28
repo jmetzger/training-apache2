@@ -9,6 +9,9 @@ cd /usr/local/src/SSL
 # ROOT-CA erstellen (firmenweit) 
 openssl genrsa -out ssl.netways.de_rootca.key 4096
 
+# ROOT-CA Zertifikat erstellen  
+openssl req -x509 -new -nodes -key ssl.netways.de_rootca.key -sha256 -days 3650 -out ssl.netways.de_rootca.pem
+
 ```
 
 ## Where to store the ca-cert (Different on RHEL and Debian) 
