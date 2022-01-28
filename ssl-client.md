@@ -1,5 +1,12 @@
 # Clientbasierte SSL Authentifizierung 
 
+## Walkthrough (RHEL/Rocky) 
+
+```
+mkdir -p /usr/local/src/SSL
+
+
+```
 
 ## Where to store the ca-cert (Different on RHEL and Debian) 
 
