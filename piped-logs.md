@@ -9,7 +9,7 @@
 
    DocumentRoot /var/www/casino.bw.de/html
    ErrorLog /var/log/httpd/casino.bw.de-error.log
-   CustomLog "|$/usr/local/bin/logme.sh" combined
+   CustomLog "|/usr/local/bin/logme.sh" combined
 </VirtualHost>
 
 #/usr/local/bin/logme.sh 
