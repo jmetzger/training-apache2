@@ -32,6 +32,7 @@
 
   1. SSL 
      * [SSL mit letsencrypt](letsencrypt-apache.md)
+     * [Client Base certificate](clientbased-ssl.md)
      
   1. SELinux 
      * [Neuen unbekannten Port freischalten, z.B. 86](selinux-port.md)
