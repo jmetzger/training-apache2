@@ -51,6 +51,7 @@
      
   1. Proxy 
      * [Reverse Proxy](reverse-proxy.md)
+     * [Reverse Proxy Balancer](reverse-proxy-balancer.md)
 
   1. Tipps & Tricks 
      * [In den Root-Benutzer wechseln](sudo.md)  
