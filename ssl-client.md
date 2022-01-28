@@ -93,6 +93,18 @@ openssl ca -in ssl.netways.de_client1.csr -cert ssl.netways.de_rootca.pem -keyfi
 # Schritt 7: anderes Format erstellen für Import 
 openssl pkcs12 -export -in ssl.netways.de_client1.crt -inkey ssl.netways.de_client1.key -out NETWAYS_Client_gmimietz.p12
 
+# Schritt 8: ROOT-Ca kopiert 
+cp -a ssl.netways.de_rootca.pem /etc/pki/ca-trust/source/anchors/
+
+# Schritt 9:
+# put certificate into complete on in all pem-file  
+update-ca-trust extract
+update-ca-trust force-enable 
+
+# Schritt 10: überprüft - common name from ca-root-certificate 
+cd /etc/pki/ca-trust/extracted/pem 
+cat tls-ca-bundle.pem | grep ca.t3isp.de 
+
 
 
 ```
