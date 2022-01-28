@@ -26,6 +26,10 @@ setsebool -P httpd_can_network_connect=1
 
 ```
 
+## Sticky Session Id for php 
+
+  * http://www.markround.com/archives/33-Apache-mod_proxy-balancing-with-PHP-sticky-sessions.html
+
 
 ## Refs:
 
