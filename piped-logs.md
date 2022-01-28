@@ -31,5 +31,4 @@ systemctl restart httpd
 
 ## Refs:
 
-  * https://workshop.avatarnewyork.com/post/filtering-apache-piped-logs-to-centralize-logging-of-errors-and-warnings/
   * https://httpd.apache.org/docs/2.4/logs.html#piped
