@@ -56,6 +56,7 @@
      * [Wo bin ich ?](pwd.md)
      * [Nach Direktive suchen](grep.md)
      * [Praktische Ausgabe von langen Seiten - less](less.md) 
+     * [cloudinit-script zum Anlegen von Server auf digitalocean](do-cloud-init.md)
   1. Prozesse 
      * [Prozesse anzeigen - ps/pstree -p](prozesse.md)
      * [Prioritäten und NiceNess](nice-pr.md)
