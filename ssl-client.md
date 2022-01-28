@@ -6,11 +6,15 @@
 mkdir -p /usr/local/src/SSL
 cd /usr/local/src/SSL
 
-# ROOT-CA erstellen (firmenweit) 
+# Schritt 1: ROOT-CA erstellen (firmenweit) 
 openssl genrsa -out ssl.netways.de_rootca.key 4096
 
-# ROOT-CA Zertifikat erstellen  
+# Schritt 2: ROOT-CA Zertifikat erstellen  
 openssl req -x509 -new -nodes -key ssl.netways.de_rootca.key -sha256 -days 3650 -out ssl.netways.de_rootca.pem
+
+# Schritt 3: Key für Client erstellen 
+openssl genrsa -out ssl.netways.de_client1.key 4096
+
 
 ```
 
