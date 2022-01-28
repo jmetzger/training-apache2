@@ -3,9 +3,14 @@
 ## Example config 
 
 ```
-htpasswd -c /etc/apache2/.htpasswd sammy
+# Ubuntu / Debian 
+
+htpasswd -c /etc/apache2/.htpasswd kurs 
 htpasswd /etc/apache2/.htpasswd another_user
 
+# RHEL / Rocky  - password 
+htpasswd -c /etc/httpd/.htpasswd kurs 
+htpasswd /etc/httpd/.htpasswd another_user
 
 <VirtualHost *:80>
     ServerAdmin webmaster@localhost
@@ -13,10 +18,11 @@ htpasswd /etc/apache2/.htpasswd another_user
     ErrorLog /var/log/httpd/error.log
     CustomLog /var/log/httpd/access.log combined
 
-    <Directory "/var/www/html">
+    <Directory "/var/www/bw.de/html/private/">
         AuthType Basic
-        AuthName "Restricted Content"
-        AuthUserFile /etc/apache2/.htpasswd
+        AuthName "Bitte Einloggen:"
+        AuthUserFile /etc/httpd/.htpasswd 
+        # AuthUserFile /etc/apache2/.htpasswd
         Require valid-user
     </Directory>
 </VirtualHost>
