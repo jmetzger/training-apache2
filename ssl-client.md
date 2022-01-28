@@ -6,6 +6,9 @@
 mkdir -p /usr/local/src/SSL
 cd /usr/local/src/SSL
 
+# ROOT-CA erstellen (firmenweit) 
+openssl genrsa -out ssl.netways.de_rootca.key 4096
+
 ```
 
 ## Where to store the ca-cert (Different on RHEL and Debian) 
