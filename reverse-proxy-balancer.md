@@ -13,3 +13,7 @@ ProxyPass        "/" "balancer://mycluster"
 ProxyPassReverse "/" "balancer://mycluster
 
 ```
+
+## Sticky Session Id for php (sticky session explained)
+
+  * http://www.markround.com/archives/33-Apache-mod_proxy-balancing-with-PHP-sticky-sessions.html
