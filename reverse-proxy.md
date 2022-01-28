@@ -4,8 +4,8 @@
 
 ```
 # auf balancer 
-ProxyPass / http://192.168.56.103 
-ProxyPassReverse / http://192.168.56.103
+ProxyPass / http://10.135.0.9 
+ProxyPassReverse / http://10.135.0.9
 # Braucht der Proxy den Hosteintrag oder nicht ? 
 # Default deaktiviert und in der Regel nicht benötigt 
 # ProxyPreserveHost on   
